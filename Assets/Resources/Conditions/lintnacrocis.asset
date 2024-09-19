@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1dc4d443a0f565743bcf8a7228f89b89, type: 3}
   m_Name: lintnacrocis
   m_EditorClassIdentifier: 
-  spriteColor: {r: 0, g: 0, b: 0, a: 0}
+  spriteColor: {r: 0.14150941, g: 0.07943217, b: 0.07943217, a: 0}
+  material: {fileID: 0}
   conditionName: Large Intestine Nacrosis
   organType: 5
   isDefaultState: 0

@@ -8,7 +8,6 @@ public enum OrganType
     Liver,
     Pancreas,
     LargeIntestine,
-    SmallIntestine,
     AdrenalGland,
     Kidney
 }
@@ -19,6 +18,9 @@ public class ConditionObject : ScriptableObject
 {
     [SerializeField]
     private Color spriteColor;
+
+    [SerializeField]
+    private Material material;
 
     [SerializeField]
     private string conditionName;
@@ -37,4 +39,6 @@ public class ConditionObject : ScriptableObject
     public OrganType OrganType => organType;
     public bool IsDefaultState => isDefaultState;
     public bool HasCancer => hasCancer;
+    public Material Material => material;
+    
 }

@@ -80,10 +80,7 @@ public class OrganGrab : MonoBehaviour
         {
             InspectingOrgan();
         }
-        else
-        {
-            transform.localPosition = startPos;
-        }
+        
 
         if (!GameManager.GetGameManager().inspecting)
         {

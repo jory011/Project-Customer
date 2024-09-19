@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Dmggland
   m_EditorClassIdentifier: 
   spriteColor: {r: 0, g: 0, b: 0, a: 0}
+  material: {fileID: 0}
   conditionName: Adranalie defciency
-  organType: 7
+  organType: 6
   isDefaultState: 0
   hasCancer: 0

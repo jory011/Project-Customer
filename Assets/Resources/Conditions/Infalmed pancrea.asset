@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1dc4d443a0f565743bcf8a7228f89b89, type: 3}
   m_Name: Infalmed pancrea
   m_EditorClassIdentifier: 
-  spriteColor: {r: 0, g: 0, b: 0, a: 0}
+  spriteColor: {r: 0.3773585, g: 0.14417943, b: 0.14417943, a: 0}
+  material: {fileID: 0}
   conditionName: Inflamed Pancrea
   organType: 4
   isDefaultState: 0

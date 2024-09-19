@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Wetlung
   m_EditorClassIdentifier: 
   spriteColor: {r: 0, g: 0, b: 0, a: 0}
+  material: {fileID: 2100000, guid: 2bb584d171d2a6840a41e1d572a2c19c, type: 2}
   conditionName: ACD
   organType: 0
   isDefaultState: 0

@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Minerslung
   m_EditorClassIdentifier: 
   spriteColor: {r: 0, g: 0, b: 0, a: 0}
+  material: {fileID: 2100000, guid: 227d108ddc80a8744938767794e106cc, type: 2}
   conditionName: COPD
   organType: 0
   isDefaultState: 0

@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Liverdmg1
   m_EditorClassIdentifier: 
   spriteColor: {r: 0, g: 0, b: 0, a: 0}
+  material: {fileID: 2100000, guid: 29a76368fbcb52e4bb9b9e0405211045, type: 2}
   conditionName: Fibrosis
   organType: 3
   isDefaultState: 0

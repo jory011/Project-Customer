@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: DamageKidney
   m_EditorClassIdentifier: 
   spriteColor: {r: 0, g: 0, b: 0, a: 0}
+  material: {fileID: 0}
   conditionName: Kidney Disease
-  organType: 8
+  organType: 7
   isDefaultState: 0
   hasCancer: 0

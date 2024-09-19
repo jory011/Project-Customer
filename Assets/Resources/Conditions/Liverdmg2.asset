@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Liverdmg2
   m_EditorClassIdentifier: 
   spriteColor: {r: 0, g: 0, b: 0, a: 0}
+  material: {fileID: 2100000, guid: 474f125f65775954ca9c7c4ec7d30adc, type: 2}
   conditionName: Cirrhsis
   organType: 3
   isDefaultState: 0
