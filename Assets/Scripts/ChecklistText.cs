@@ -2,26 +2,45 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.EventSystems;
+using Unity.VisualScripting;
 
-public class ChecklistText : MonoBehaviour
+public class ChecklistText : MonoBehaviour, IPointerClickHandler
 {
     TextMeshProUGUI textLine;
 
     void Start()
     {
         textLine = GetComponent<TextMeshProUGUI>();
-        textLine.fontStyle = FontStyles.Strikethrough;
+        textLine.fontStyle = FontStyles.Normal;
         textLine.enabled = false;
+
+        if (textLine == null)
+        {
+            Debug.LogWarning("Could not find " + name + "'s text component");
+        }
+    }
+
+    public void OnPointerClick(PointerEventData eventData)
+    {
+
+        if (GameManager.GetGameManager().checklistOpen)
+        {
+            if (textLine.fontStyle == FontStyles.Normal)
+            {
+                textLine.fontStyle = FontStyles.Strikethrough;
+            }
+            else
+            {
+                textLine.fontStyle = FontStyles.Normal;
+            }
+        }  
     }
 
     private void Update()
     {
-        if (GameManager.GetGameManager().inspecting)
+        if (GameManager.GetGameManager().checklistOpen)
         {
-            if (Input.GetMouseButton(0))
-            {
-                textLine.fontStyle = FontStyles.Strikethrough;
-            }
             textLine.enabled = true;
         }
         else

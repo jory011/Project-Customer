@@ -6,6 +6,8 @@ TagManager:
   tags:
   - CorpsePrompt
   - OrganPrompt
+  - Checklist
+  - ListPrompt
   layers:
   - Default
   - TransparentFX

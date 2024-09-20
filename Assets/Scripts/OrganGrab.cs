@@ -36,7 +36,7 @@ public class OrganGrab : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (cam != null && !GameManager.GetGameManager().organGrabbed)
+        if (cam != null && !GameManager.GetGameManager().organGrabbed && !GameManager.GetGameManager().checklistOpen)
         {
             if (GameManager.GetGameManager().inspecting && !grabbed)
             {
@@ -66,7 +66,7 @@ public class OrganGrab : MonoBehaviour
 
         transform.localPosition = Vector3.Lerp(startPos, grabbedPos, grabLerp);
 
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E) && !GameManager.GetGameManager().checklistOpen)
         {
             transform.position = startPos;
             putBackPrompt.SetActive(false);
@@ -94,7 +94,7 @@ public class OrganGrab : MonoBehaviour
         if (grabbed)
         {
             GameManager.GetGameManager().organGrabbed = true;
-            if (Input.GetMouseButton(0))
+            if (Input.GetMouseButton(0) && !GameManager.GetGameManager().checklistOpen)
             {
                 float xRotation = Input.GetAxis("Mouse X") * rotateSpeed * Time.fixedDeltaTime;
                 transform.Rotate(Vector3.up, -xRotation);
@@ -102,7 +102,7 @@ public class OrganGrab : MonoBehaviour
         }
         else
         {
-            transform.rotation = Quaternion.Euler(90, 0, 0);
+            transform.rotation = Quaternion.Euler(90, transform.rotation.y, transform.rotation.z);
         }
     }
 }
